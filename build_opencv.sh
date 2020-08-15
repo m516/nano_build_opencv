@@ -72,6 +72,8 @@ install_dependencies () {
         libgstreamer-plugins-good1.0-dev \
         libgstreamer1.0-dev \
         libgtk-3-dev \
+        libgtkglext1 \
+        libgtkglext1-dev \
         libjpeg-dev \
         libjpeg8-dev \
         libjpeg-turbo8-dev \
