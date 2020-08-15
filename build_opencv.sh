@@ -68,6 +68,8 @@ install_dependencies () {
         libdc1394-22-dev \
         libeigen3-dev \
         libglew-dev \
+        libgl1-mesa-dev \
+        libglu1-mesa-dev \
         libgstreamer-plugins-base1.0-dev \
         libgstreamer-plugins-good1.0-dev \
         libgstreamer1.0-dev \
@@ -78,6 +80,7 @@ install_dependencies () {
         liblapack-dev \
         liblapacke-dev \
         libopenblas-dev \
+        libopenjp2-7-dev \
         libpng-dev \
         libpostproc-dev \
         libswscale-dev \
@@ -123,7 +126,8 @@ configure () {
         -D WITH_CUDNN=ON
         -D WITH_GSTREAMER=ON
         -D WITH_LIBV4L=ON
-        -D WITH_OPENGL=ON"
+        -D WITH_OPENGL=ON
+        -D WITH_GTK_2_X=ON"
 
     if [[ "$1" != "test" ]] ; then
         CMAKEFLAGS="
